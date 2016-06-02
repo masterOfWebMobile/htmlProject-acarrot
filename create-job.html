@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Acarrot Do!</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/custom.css" type="text/css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script>
+ window.onorientationchange = function () {
+
+    var orientation = window.orientation;
+
+    // Look at the value of window.orientation:
+
+    if (orientation === 0) {
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+        // device is in Portrait mode.
+
+    } else if (orientation === 90) {
+
+        // device is in Landscape mode. The screen is turned to the left.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    } else if (orientation === -90) {
+
+        // device is in Landscape mode. The screen is turned to the right.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    }
+
+};
+
+</script>
+</head>
+
+<body data-spy="scroll" data-target=".affix" data-offset="50">
+<header class="container-fluid">
+   <div class="row">
+    <div class="col-xs-3 col-sm-2 col-md-2"><a href="#"><img src="images/logo-small.png" style="max-width:100%;height:auto;"></a></div>
+    <div class="col-xs-6 col-sm-8 col-md-8 text-center"><h4>Do This. Get That.</h4></div>
+    <div class="col-xs-3 col-sm-2 col-md-2 text-right"><table class="profile-table"
+ cellpadding="0" cellspacing="0">
+    <tr>
+      <td padding="1">Welcome Robert!<br>
+</td>
+    </tr>
+    <tr>
+      <td style="">
+
+<a data-placement="bottom" data-toggle="popover" type="button" data-html="true" href="#" class="profile-photo"><img src="images/profile-avtar.png" class="img-circle" alt="profile" style="max-width:54px;height:auto;display:inline;"></span></a>
+    <div id="popover-content" class="hide">
+
+<table class="table table-responsive" style="background-color:#544e4b;">
+    <tr>
+      <td><img src="images/drop-icon-profile.png"></td>
+      <td><a href="profile.html" class="dropdown-links">Profile</a></td>
+    </tr>
+    <tr>
+      <td style="width:35px;"><img src="images/drop-icon-settings.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td style="text-align:left;vertical-align:middle;height:40px;"><a href="settings.html">Settings</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-feed.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="feed.html">Feed</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-help.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="help.html">Help</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-todo.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="to-do.html">To Do</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-logout.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="logout.html">Logout</a></td>
+    </tr>
+</table>
+
+    </div>
+
+</td>
+    </tr>
+</table>
+</div>
+  </div>
+<script>$("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+});
+</script>
+</header>
+
+<!--  Header Ends  -->
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-8 col-lg-6" style="text-align: center; padding-left: 0 !important; padding-right: 0 !important;">
+    <ul class="nav navbar-default navbar-nav" style="display:inline-block !important;  ">
+      <li  style="float:left !important"><a href="home.html" class="nav-home" style="display:inline-block !important;">Home</a></li>
+      <li class="active" style="float:left !important"><a href="jobs.html" class="nav-jobs" style="display:inline-block !important;">Jobs</a></li>
+      <li  style="float:left !important"><a href="#" class="nav-rewards" style="display:inline-block !important;">Rewards</a></li>
+      <li style="float:left !important"><a href="carrots.html" class="nav-carrots" style="display:inline-block !important;">Carrots</a></li>
+      <li style="float:left !important"><a href="circles.html" class="nav-circles" style="display:inline-block !important;">Circles</a></li>
+    </ul>
+</div>
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+</div>
+
+</div>
+</nav>
+
+<!--  Tabs Ends  -->
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-1  col-lg-2">&nbsp;</div>
+<div class="col-xs-6  col-sm-4 col-md-4  col-lg-3" style="float:left;"><span class="page-title">Create Job</span></div>
+<div class="col-xs-6  col-sm-6 col-md-6  col-lg-5 text-right"><a href="#"><span class="glyphicon glyphicon-search responsive"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-sort responsive"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-filter responsive"></span></a></div>
+<div class="col-sm-1 col-md-1 col-lg-2">&nbsp;</div>
+
+</div>
+</div>
+<!--  Title Ends  -->
+
+<div class="container-fluid">
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-10 col-md-8 col-lg-6">
+
+<div class="panel-body">
+
+<form role="form">
+<span class="grey-text">&nbsp;fields are mandatory</span><span class="mandatory">*</span><br><br>
+
+
+<div class="form-group">
+
+<div><span class="mandatory">*</span>&nbsp;<p class="big" style="display: inline-block">I am</p></div>
+<div style="display:inline-block">
+<label class="radio-inline one-third" style="width:45% !important"><input name="optradio" type="radio"><p class="big">doing this</p></label>
+<label class="radio-inline" style="width:45% !important"><input name="optradio" type="radio"><p class="big">paying for this</p></label> 
+</div>
+</div>
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1" style="width:90% !important">Select an employee or employer</label>
+      <select class="selectpicker form-control" data-width="auto" >
+        <option>Brittany</option>
+        <option>Eric</option>
+        <option>Brown W</option>
+      </select>
+</div>
+
+<div class="form-group">
+      <span class="mandatory">*</span>&nbsp;
+<label for="sel1">Import a job</label>
+<select class="selectpicker form-control" data-width="auto">
+	<option>Create new job</option>        
+	<option>Take out the garbage</option>
+        <option>Complete math homework on time</option>
+        <option>do the due</option>
+      </select>
+</div>
+
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1">Give your job a name</label>
+<input class="form-control input-lg" id="Email" style="border:0px;" placeholder="ex: 20% discount on Starbucks coffee" type="text">
+</div>
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1">Choose job category</label>
+      <select class="selectpicker form-control" data-width="auto">
+        <option>Category 1</option>
+        <option>Category 2</option>
+        <option>Category 3</option>
+      </select>
+</div>
+
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1" style="width:90% !important">How many carrots do you want for this job</label>
+<input class="form-control input-lg" id="Email" style="border:0px;" placeholder="ex:2 days" type="text">
+</div>
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1">Type of job</label>
+      <select class="selectpicker form-control" data-width="auto">
+        <option>Quiz</option>
+        <option>Regular</option>
+      </select>
+</div>
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1">Start time</label>
+<input class="form-control input-lg" id="Email" style="border:0px;" placeholder="ex:10:AM 14th Mar 2016" type="text">
+</div>
+
+<div class="form-group">
+<span class="mandatory">*</span>&nbsp;
+<label for="sel1">End time</label>
+<input class="form-control input-lg" id="Email" style="border:0px;" placeholder="ex:10:AM 20th Mar 2016" type="text">
+</div>
+
+
+<div class="full" style="border-bottom:1px solid #999;padding-top:6px;padding-bottom:12px;margin-bottom:12px;">
+<span class="big">Reminder</span>
+
+<div style="float:right;"><a href="#"><i class="fa fa-toggle-on fa-5"></i></a></div>
+
+<div class="full" style="text-align:center;margin-top:18px;margin-bottom:6px;">
+<a href="#"><button type="button" class="btn btn-main">Add another job</button></a></div>
+</div>
+
+
+</div>
+</div>
+<div class="col-sm-1 col-md-2 col-lg-3" style="height: 0;">&nbsp;</div>
+
+</div>
+<div class="full">
+<div class="one-third text-center"><a href="#"><button type="button" class="btn btn-main">Save</button></a></div>
+<div class="one-third text-center"><a href="#"><button type="button" class="btn btn-main"><i class="fa fa-share-alt"></i></a>
+</div>
+<div class="one-third text-center"><a href="#"><button type="button" class="btn btn-main">Cancel</button></a></div>
+</div>
+
+
+
+</form>
+
+</div>
+</div>
+
+<!--  Content Ends  -->
+
+
+
+<footer class="container-fluid text-center">
+
+<div ><a class="footer-links" href="index.html" style = "padding-left:0 !important">Home</a><a href="about.html">About Us</a><a href="how-do-works.html" style="display: inline-block">How it works</a></div>
+
+<div> <a href="message-board.html" style="display: inline-block !important; padding-left: 0 !important">Message Board</a><a href="feed.html">Feed</a><a href="contact.html">Contact Us</a></div>
+
+<br><br>
+<img src="images/app-store.png"><br><br>&copy; 2016 acarrotinc.com
+
+</footer>
+</body>
+
+</html>

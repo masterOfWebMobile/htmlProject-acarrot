@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Acarrot Do! Login</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/custom.css" type="text/css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+ window.onorientationchange = function () {
+
+    var orientation = window.orientation;
+
+    // Look at the value of window.orientation:
+
+    if (orientation === 0) {
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+        // device is in Portrait mode.
+
+    } else if (orientation === 90) {
+
+        // device is in Landscape mode. The screen is turned to the left.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    } else if (orientation === -90) {
+
+        // device is in Landscape mode. The screen is turned to the right.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    }
+
+};
+
+</script>
+</head>
+
+<body data-spy="scroll" data-target=".affix" data-offset="50">
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-md-2"><img src="images/logo-small.png" style="max-width:100%;height:auto;"></div>
+    <div class="col-xs-6 col-md-8 text-center"><h4>Do This. Get That.</h4></div>
+    <div class="col-xs-3 col-md-2 text-right">&nbsp;</div>
+
+</td>
+    </tr>
+</table>
+</div>
+  </div>
+<script>
+jQuery("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return jQuery('#popover-content').html();
+        }
+});
+</script>
+</header>
+
+<!--  Header Ends  -->
+
+<nav class="navbar">
+<div class="container-fluid">
+
+<div class="row" style="height:110px;background-color:#524e4d;">
+
+<div class="col-sm-3 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-6 col-lg-6">
+<p class="big"><br><br>Fill the form below to login</p>
+</div>
+
+<div class="col-sm-6 col-lg-3">&nbsp;</div>
+</div>
+
+</div>
+</nav>
+
+<!--  Tabs Ends  -->
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-1  col-lg-2">&nbsp;</div>
+<div class="col-xs-6  col-sm-4 col-md-4  col-lg-3" style="float:left;"><span class="page-title">Login</span></div>
+<div class="col-xs-6  col-sm-6 col-md-6  col-lg-5" >&nbsp;</div>
+<div class="col-sm-1 col-md-1 col-lg-2">&nbsp;</div>
+
+</div>
+</div>
+<!--  Title Ends  -->
+
+<div class="container-fluid">
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-10 col-md-8 col-lg-6">
+
+<div class="panel-body" style="margin: 0 auto !important">
+
+ <form role="form" style="margin: 0 auto !important">
+  <div class="form-group">
+    
+    <input class="form-control input-lg" id="Email" type="text" style="background-color:#5c5651;border-bottom:1px solid #999;border-top:0px;border-left:0px;border-right:0px;border-radius:0px;font-size:20px;color:#7ed490;" placeholder="Email/ User ID/ Phone">
+  </div>
+  <div class="form-group">
+    
+    <input class="form-control input-lg" id="password" type="password" placeholder="Password" style="background-color:#5c5651;border-bottom:1px solid #999;;border-top:0px;border-left:0px;border-right:0px;border-radius:0px;font-size:20px;color:#7ed490;">
+  </div>
+
+</form>
+<table style="text-align:left; width:100%;"
+ cellpadding="2" cellspacing="2">
+    <tr>
+      <td><a>Forgot Passsword?</a><br><br></td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p class="big" style="text-align: center !important">New to Do!</p></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+      <table style="text-align: center; width: 100%;"
+ cellpadding="2" cellspacing="2">
+          <tr>
+            <td style="text-align: left !important;"><!--a href="#"--><button type="button" class="btn btn-main" style="width:125px;" onclick="login()">Login</button><!--/a--></td>
+            
+            <td style="text-align: right !important;"><a href="signup.html"><button type="button" class="btn btn-main" style="width:125px;">Sign Up</button></a></td>
+          </tr>
+      </table>
+      </td>
+    </tr>
+    <tr>
+      <td height="50px">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table style="text-align: center; width: 100%;"
+ cellpadding="2" cellspacing="2">
+          <tr>
+            <td style="width:45% !important"><a href="#"><img src="images/circles/icon-fb.png"><br>Login with facebook</a></td>
+            <td><img src="images/2px-divider.png" style="width:1px; height:80px;margin-left:12px; margin-right:12px;"></td>
+            <td style="width:45% !important"><a href="#"><img src="images/circles/icon-g+.png"><br>Login with Google+</a></td>
+          </tr>
+      </table></td>
+    </tr>
+</table>
+
+
+</div>
+
+</div>
+<div class="col-sm-1 col-md-2 col-lg-3">&nbsp;</div>
+
+</div>
+
+
+</div>
+</div>
+
+<!--  Content Ends  -->
+
+
+
+<footer class="container-fluid text-center">
+<div>
+<a href="about.html" style="padding-left: 0 !important">About Us</a><a href="how-do-works.html">How do! works</a><a href="contact.html">Contact Us</a></li>
+</div>
+
+<br><br>
+<img src="images/app-store.png"><br><br>&copy; 2016 acarrotinc.com
+
+</footer>
+</body>
+
+</html>

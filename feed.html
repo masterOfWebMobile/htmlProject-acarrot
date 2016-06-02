@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Acarrot Do!</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/custom.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+ window.onorientationchange = function () {
+
+    var orientation = window.orientation;
+
+    // Look at the value of window.orientation:
+
+    if (orientation === 0) {
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+        // device is in Portrait mode.
+
+    } else if (orientation === 90) {
+
+        // device is in Landscape mode. The screen is turned to the left.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    } else if (orientation === -90) {
+
+        // device is in Landscape mode. The screen is turned to the right.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    }
+
+};
+
+</script>
+</head>
+
+<body data-spy="scroll" data-target=".affix" data-offset="50">
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-sm-2 col-md-2"><a href="#"><img src="images/logo-small.png" style="max-width:100%;height:auto;"></a></div>
+    <div class="col-xs-6 col-sm-8 col-md-8 text-center"><h4>Do This. Get That.</h4></div>
+    <div class="col-xs-3 col-sm-2 col-md-2 text-right"><table class="profile-table"
+ cellpadding="0" cellspacing="0">
+    <tr>
+      <td padding="1">Welcome Robert!<br>
+</td>
+    </tr>
+    <tr>
+      <td style="float:right">
+
+<a data-placement="bottom" data-toggle="popover" type="button" data-html="true" href="#" class="profile-photo"><img src="images/profile-avtar.png" class="img-circle" alt="profile" style="max-width:54px;height:auto;display:inline;"></span></a>
+    <div id="popover-content" class="hide">
+
+<table class="table table-responsive" style="background-color:#544e4b;">
+    <tr>
+      <td><img src="images/drop-icon-profile.png"></td>
+      <td><a href="profile.html" class="dropdown-links">Profile</a></td>
+    </tr>
+    <tr>
+      <td style="width:35px;"><img src="images/drop-icon-settings.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td style="text-align:left;vertical-align:middle;height:40px;"><a href="settings.html">Settings</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-feed.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="feed.html">Feed</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-help.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="help.html">Help</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-todo.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="to-do.html">To Do</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-logout.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="logout.html">Logout</a></td>
+    </tr>
+</table>
+
+    </div>
+
+</td>
+    </tr>
+</table>
+</div>
+  </div>
+<script>$("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+});
+</script>
+</header>
+
+<!--  Header Ends  -->
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-8 col-lg-6" style="text-align: center; padding-left: 0 !important; padding-right: 0 !important;">
+    <ul class="nav navbar-default navbar-nav" style="display:inline-block !important;  ">
+      <li  style="float:left !important"><a href="home.html" class="nav-home" style="display:inline-block !important;">Home</a></li>
+      <li style="float:left !important"><a href="jobs.html" class="nav-jobs" style="display:inline-block !important;">Jobs</a></li>
+      <li class="active"  style="float:left !important"><a href="#" class="nav-rewards" style="display:inline-block !important;">Rewards</a></li>
+      <li style="float:left !important"><a href="carrots.html" class="nav-carrots" style="display:inline-block !important;">Carrots</a></li>
+      <li style="float:left !important"><a href="circles.html" class="nav-circles" style="display:inline-block !important;">Circles</a></li>
+    </ul>
+</div>
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+</div>
+
+</div>
+</nav>
+
+<!--  Tabs Ends  -->
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-1  col-lg-2">&nbsp;</div>
+<div class="col-xs-6  col-sm-4 col-md-4  col-lg-3" style="float:left;"><span class="page-title">Feed</span></div>
+<div class="col-xs-6  col-sm-6 col-md-6  col-lg-5 text-right"><a href="#"><span class="glyphicon glyphicon-search responsive"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-sort responsive"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-filter responsive"></span></a></div>
+<div class="col-sm-1 col-md-1 col-lg-2">&nbsp;</div>
+
+</div>
+</div>
+<!--  Title Ends  -->
+
+<div class="container-fluid">
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-8 col-lg-6">
+
+<!-- Feed starts -->
+<div class="panel panel-default panel-home"> 
+<!-- Feed starts -->
+<div class="panel-body">
+
+<div class="text-center" style="max-width:120px;float:left;position:relative;margin-right:20px;"><img src="images/feed/thumb-linda.png" class="img-responsive img-circle" style="width:70px;height:auto; display:inline; border:2px solid #61cd0c;"><br><br>
+<span class="grey-text" style="font-weight:bold;">Linda,<br></span><span class="grey-text-subname">Student</span>
+</div>
+
+
+<div style="padding-left:20px;"><span class="circle-name">Successfully completed 10th grade
+advanced math challenge<br></span><br>
+<div style="display: inline-block !important; width: 80% !important;">
+<div class="one-third text-center"><a href="#"><button type="button" class="btn btn-main">Like</button></a></div>
+<div class="one-third text-center" style="float:right !important"><a href="#"><button type="button" class="btn btn-main">Dislike</button></a></div>
+</div>
+</div>
+
+</div>
+</div><!-- feed ends -->
+
+<!-- Feed starts -->
+<div class="panel panel-default panel-home"> 
+<!-- Feed starts -->
+<div class="panel-body">
+
+<div class="text-center" style="max-width:120px;float:left;position:relative;margin-right:20px;"><img src="images/feed/thumb-mike.png" class="img-responsive img-circle" style="width:70px;height:auto; display:inline; border:2px solid #61cd0c;"><br><br>
+<span class="grey-text" style="font-weight:bold;">Mike,<br></span><span class="grey-text-subname">Student</span>
+</div>
+
+<br>
+<div style="padding-left:20px;"><span class="circle-name">Got an A in math for the first time<br></span><br>
+<div style="display: inline-block !important; width: 80% !important;">
+<div class="one-third text-center"><a href="#"><button type="button" class="btn btn-main">Like</button></a></div>
+<div class="one-third text-center" style="float:right !important"><a href="#"><button type="button" class="btn btn-main">Dislike</button></a></div>
+</div>
+</div>
+
+</div>
+</div><!-- feed ends -->
+
+<!-- Feed starts -->
+<div class="panel panel-default panel-home"> 
+<!-- Feed starts -->
+<div class="panel-body">
+
+<div class="text-center" style="max-width:120px;float:left;position:relative;margin-right:20px;"><img src="images/feed/thumb-scott.png" class="img-responsive img-circle" style="width:70px;height:auto; display:inline; border:2px solid #61cd0c;"><br><br>
+<span class="grey-text" style="font-weight:bold;">Scott,<br></span><span class="grey-text-subname">Student</span>
+</div>
+
+<br>
+<div style="padding-left:20px;"><span class="circle-name">Finished 5k run in 12 mins<br></span><br>
+<div style="display: inline-block !important; width: 80% !important;">
+<div class="one-third text-center"><a href="#"><button type="button" class="btn btn-main">Like</button></a></div>
+<div class="one-third text-center" style="float:right !important"><a href="#"><button type="button" class="btn btn-main">Dislike</button></a></div>
+</div>
+</div>
+
+</div>
+</div><!-- feed ends -->
+
+</div>
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+
+</div>
+
+
+</div>
+</div>
+
+<!--  Content Ends  -->
+
+
+
+<footer class="container-fluid text-center">
+
+<div ><a class="footer-links" href="index.html" style = "padding-left:0 !important">Home</a><a href="about.html">About Us</a><a href="how-do-works.html" style="display: inline-block">How it works</a></div>
+
+<div> <a href="message-board.html" style="display: inline-block !important; padding-left: 0 !important">Message Board</a><a href="feed.html">Feed</a><a href="contact.html">Contact Us</a></div>
+
+<br><br>
+<img src="images/app-store.png"><br><br>&copy; 2016 acarrotinc.com
+
+</footer>
+</body>
+
+</html>

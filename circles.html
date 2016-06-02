@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title>Acarrot Do!</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/custom.css" type="text/css">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+ window.onorientationchange = function () {
+
+    var orientation = window.orientation;
+
+    // Look at the value of window.orientation:
+
+    if (orientation === 0) {
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+        // device is in Portrait mode.
+
+    } else if (orientation === 90) {
+
+        // device is in Landscape mode. The screen is turned to the left.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    } else if (orientation === -90) {
+
+        // device is in Landscape mode. The screen is turned to the right.
+
+        $('body').animate({
+            scrollTop: '0'
+        }, 500);
+        $(".profile-photo").click();
+        $(".profile-photo").click();
+
+    }
+
+};
+
+</script>
+</head>
+
+<body data-spy="scroll" data-target=".affix" data-offset="50">
+<header class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-sm-2 col-md-2"><a href="#"><img src="images/logo-small.png" style="max-width:100%;height:auto;"></a></div>
+    <div class="col-xs-6 col-sm-8 col-md-8 text-center"><h4>Do This. Get That.</h4></div>
+    <div class="col-xs-3 col-sm-2 col-md-2 text-right"><table class="profile-table"
+ cellpadding="0" cellspacing="0">
+    <tr>
+      <td padding="1">Welcome Robert!<br>
+</td>
+    </tr>
+    <tr>
+      <td style="">
+
+<a data-placement="bottom" data-toggle="popover" type="button" data-html="true" href="#" class="profile-photo"><img src="images/profile-avtar.png" class="img-circle" alt="profile" style="max-width:54px;height:auto;display:inline;"></span></a>
+    <div id="popover-content" class="hide">
+
+<table class="table table-responsive" style="background-color:#544e4b;">
+    <tr>
+      <td><img src="images/drop-icon-profile.png"></td>
+      <td><a href="profile.html" class="dropdown-links">Profile</a></td>
+    </tr>
+    <tr>
+      <td style="width:35px;"><img src="images/drop-icon-settings.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td style="text-align:left;vertical-align:middle;height:40px;"><a href="settings.html">Settings</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-feed.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="feed.html">Feed</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-help.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="help.html">Help</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-todo.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="to-do.html">To Do</a></td>
+    </tr>
+    <tr>
+      <td><img src="images/drop-icon-logout.png" class="img-responsive" alt="profile" style="width:30px;height:auto;"></td>
+      <td><a href="logout.html">Logout</a></td>
+    </tr>
+</table>
+
+    </div>
+
+</td>
+    </tr>
+</table>
+</div>
+  </div>
+<script>$("[data-toggle=popover]").popover({
+    html: true, 
+	content: function() {
+          return $('#popover-content').html();
+        }
+});
+</script>
+</header>
+
+<!--  Header Ends  -->
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-8 col-lg-6" style="text-align: center; padding-left: 0 !important; padding-right: 0 !important;">
+    <ul class="nav navbar-default navbar-nav" style="display:inline-block !important;  ">
+      <li  style="float:left !important"><a href="home.html" class="nav-home" style="display:inline-block !important;">Home</a></li>
+      <li style="float:left !important"><a href="jobs.html" class="nav-jobs" style="display:inline-block !important;">Jobs</a></li>
+      <li style="float:left !important"><a href="rewards.html" class="nav-rewards" style="display:inline-block !important;">Rewards</a></li>
+      <li style="float:left !important"><a href="carrots.html" class="nav-carrots" style="display:inline-block !important;">Carrots</a></li>
+      <li class="active" style="float:left !important"><a href="#" class="nav-circles" style="display:inline-block !important;">Circles</a></li>
+    </ul>
+</div>
+
+<div class="col-sm-2 col-lg-3">&nbsp;</div>
+</div>
+
+</div>
+</nav>
+
+<!--  Tabs Ends  -->
+
+<div class="container-fluid">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-1  col-lg-2">&nbsp;</div>
+<div class="col-xs-6  col-sm-4 col-md-4  col-lg-3" style="float:left;"><span class="page-title">Circles</span></div>
+<div class="col-xs-6  col-sm-6 col-md-6  col-lg-5 text-right"><a href="#"><span class="glyphicon glyphicon-search responsive"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-sort responsive"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><span class="glyphicon glyphicon-filter responsive"></span></a></div>
+<div class="col-sm-1 col-md-1 col-lg-2">&nbsp;</div>
+
+</div>
+</div>
+<!--  Title Ends  -->
+
+<div class="container-fluid">
+<div class="container">
+
+<div class="row">
+
+<div class="col-sm-1 col-md-2 col-lg-3">&nbsp;</div>
+
+<div class="col-sm-10 col-md-8 col-lg-6">
+
+<div class="panel-body">
+
+<div class="row" style="margin-bottom:55px;">
+
+<div class="col-sm-4"><div class="circle-container">
+<img src="images/circles/rate-star-3.png" style="margin-top:-40px;">
+<div class="outer-circle-rated">
+
+<a href="view-circle.html"><img src="images/circles/thumb-circle-family.jpg"  class="img-responsive img-circle" alt="family-circle" style="width:110px; height:110px;display:inline;border:3px solid #7ed490;">
+</a>
+
+</div>
+<br>
+<a>Family</a>
+
+</div>
+
+</div>
+<div class="col-sm-4"><div class="circle-container">
+<img src="images/circles/rate-star-2.png" style="margin-top:-40px;">
+<div class="outer-circle-rated">
+
+<a href="view-circle.html"><img src="images/circles/thumb-circle-social.jpg"  class="img-responsive img-circle" alt="family-circle" style="width:110px; height:110px;display:inline;border:3px solid #7ed490;">
+</a>
+
+</div>
+<br>
+<a>Social</a>
+
+</div>
+</div>
+<div class="col-sm-4"><div class="circle-container">
+
+<div class="outer-circle-no-border">
+
+<a href="#"><img src="images/circles/thumb-circle-family.jpg"  class="img-responsive img-circle" alt="family-circle" style="width:110px; height:110px;display:inline;border:3px solid #7ed490;">
+</a>
+
+</div>
+<br>
+Sarah
+
+</div>
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-4"><div class="circle-container">
+<img src="images/circles/rate-star-1.png" style="margin-top:-40px;">
+<div class="outer-circle-rated">
+
+<a href="view-circle.html"><img src="images/circles/thumb-circle-band.jpg"  class="img-responsive img-circle" alt="family-circle" style="width:110px; height:110px;display:inline;border:3px solid #7ed490;">
+</a>
+
+</div>
+<br>
+<a>Band</a>
+
+</div>
+
+</div>
+<div class="col-sm-4"><div class="circle-container">
+
+<div class="outer-circle-no-border">
+
+<a href="#"><img src="images/circles/thumb-circle-social.jpg" class="img-responsive img-circle" alt="family-circle" style="width:110px; height:110px;;display:inline;border:3px solid #7ed490;">
+</a>
+
+</div>
+<br>
+Friend
+
+</div>
+</div>
+<div class="col-sm-4"><div class="circle-container">
+
+<div class="outer-circle-no-border">
+
+<a href="#"><img src="images/circles/thumb-circle-contact.jpg" class="img-responsive img-circle" alt="contact" style="width:110px; height:110px;display:inline;border:3px solid #7ed490;">
+</a>
+
+</div>
+<br>
+<a>Contact</a>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+<div class="col-sm-1 col-md-2 col-lg-3"><a href="#"><button type="button" class="btn btn-main">+</button></a></div>
+
+</div>
+
+
+</div>
+</div>
+
+<!--  Content Ends  -->
+
+
+
+<footer class="container-fluid text-center">
+
+<div ><a class="footer-links" href="index.html" style = "padding-left:0 !important">Home</a><a href="about.html">About Us</a><a href="how-do-works.html" style="display: inline-block">How it works</a></div>
+
+<div> <a href="message-board.html" style="display: inline-block !important; padding-left: 0 !important">Message Board</a><a href="feed.html">Feed</a><a href="contact.html">Contact Us</a></div>
+
+<br><br>
+<img src="images/app-store.png"><br><br>&copy; 2016 acarrotinc.com
+
+</footer>
+</body>
+
+</html>
